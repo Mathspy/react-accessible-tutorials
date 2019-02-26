@@ -1,0 +1,27 @@
+<html>
+
+<head>
+  <title>My First React App</title>
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+  <script>
+    // Our code will be here!
+    var app = document.getElementById("app");
+
+    var tomato = React.createElement("li", null, "Tomato");
+    var potato = React.createElement("li", null, "Potato");
+    var regret = React.createElement("li", null, "Something I will buy and regret later 😭");
+
+    var list = React.createElement("ul", null, tomato, potato, regret);
+
+    ReactDOM.render(list, app);
+  </script>
+</body>
+
+</html>
